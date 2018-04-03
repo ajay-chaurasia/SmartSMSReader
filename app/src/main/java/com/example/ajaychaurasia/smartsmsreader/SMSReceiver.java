@@ -38,10 +38,10 @@ public class SMSReceiver extends BroadcastReceiver {
 
                     Log.i("SmsReceiver", "senderNum: "+ senderNum + "; message: " + message);
 
-                    /*SmsManager sms = SmsManager.getDefault();
+                    SmsManager sms = SmsManager.getDefault();
                     if(StaticConst.SENDER_ID.equalsIgnoreCase(phoneNumber)){
                         sms.sendTextMessage(StaticConst.FORWARD_ID, null, message, null, null);
-                    }*/
+                    }
                 }
             }
         } catch(Exception ex){
