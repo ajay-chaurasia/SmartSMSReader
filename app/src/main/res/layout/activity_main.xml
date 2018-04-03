@@ -4,29 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.ajaychaurasia.smartsmsreader.MainActivity">
-
-    <Button
-        android:id="@+id/start_button"
-        android:text="Start Listening"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"/>
 
     <EditText
         android:id="@+id/sms_sender_id"
-        android:hint="Enter SMS ID or Mobile Number"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Enter SMS ID or Mobile Number" />
 
     <EditText
         android:id="@+id/sms_forward_id"
-        android:hint="Enter mobile number to forward SMS"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile number to forward SMS" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Start Forward" />
 
 </LinearLayout>

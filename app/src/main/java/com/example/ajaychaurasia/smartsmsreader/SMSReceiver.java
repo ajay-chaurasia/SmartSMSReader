@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.util.Log;
 import android.widget.Toast;
@@ -37,6 +38,10 @@ public class SMSReceiver extends BroadcastReceiver {
 
                     Log.i("SmsReceiver", "senderNum: "+ senderNum + "; message: " + message);
 
+                    /*SmsManager sms = SmsManager.getDefault();
+                    if(StaticConst.SENDER_ID.equalsIgnoreCase(phoneNumber)){
+                        sms.sendTextMessage(StaticConst.FORWARD_ID, null, message, null, null);
+                    }*/
                 }
             }
         } catch(Exception ex){
