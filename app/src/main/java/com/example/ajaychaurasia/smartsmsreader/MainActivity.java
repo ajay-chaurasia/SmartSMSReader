@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
-    SMSReceiver smsReceiver;
+    com.example.ajaychaurasia.smartsmsreader.SMSReceiver smsReceiver;
     final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
 
     @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         (findViewById(R.id.start_button)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsReceiver = new SMSReceiver();
+                smsReceiver = new com.example.ajaychaurasia.smartsmsreader.SMSReceiver();
                 /*IntentFilter intentFilter = new IntentFilter("Intent.action.SMS_RECEIVED_ACTION");
                 registerReceiver(new SMSReceiver(), intentFilter);*/
                 StaticConst.SENDER_ID = ((EditText) (findViewById(R.id.sms_sender_id))).getText().toString();
